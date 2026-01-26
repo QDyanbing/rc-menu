@@ -4,7 +4,7 @@ import Overflow from '@rc-component/overflow';
 import warning from '@rc-component/util/lib/warning';
 import SubMenuList from './SubMenuList';
 import { parseChildren } from '../utils/commonUtil';
-import type { MenuInfo, SubMenuType, PopupRender } from '../interface';
+import type { MenuInfo, SubMenuType } from '../interface';
 import MenuContextProvider, { MenuContext } from '../context/MenuContext';
 import useMemoCallback from '../hooks/useMemoCallback';
 import PopupTrigger from './PopupTrigger';
@@ -38,7 +38,6 @@ export interface SubMenuProps extends Omit<SubMenuType, 'key' | 'children' | 'la
 
   /** @private Do not use. Private warning empty usage */
   warnKey?: boolean;
-  popupRender?: PopupRender;
   // >>>>>>>>>>>>>>>>>>>>> Next  Round <<<<<<<<<<<<<<<<<<<<<<<
   // onDestroy?: DestroyEventHandler;
 }
